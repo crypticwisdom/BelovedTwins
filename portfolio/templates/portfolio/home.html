@@ -1,0 +1,394 @@
+{% extends 'portfolio/template.html' %}
+
+{% load static %}
+
+{% block title %} Beloved | Home {% endblock title %}
+
+{% block content %}
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div id="present" class="container-fluid">
+          <a href="{% url 'portfolio:home' %}" id="present1" class="hero-logo" data-aos="zoom-in"><img style="width: 40%;" src="{% static 'portfolio/img/twins.jpg' %}" alt=""></a>
+          {% if success_message %}
+            <h1 style="font-family:cursive  ; color:rgb(2, 2, 12)"  data-aos="zoom-in" data-aos-delay="200">{{ success_message }}</h1>
+          <a data-aos="fade-up" data-aos-delay="200" id="present5" href="#about" class="btn-get-started scrollto"><b>Next</b></a>
+
+          {% else %} 
+          <h1 style="font-family:cursive  ; color:rgb(2, 2, 12)"  id="present3" data-aos="zoom-in"><b>Welcome To Beloved Twins Surprises</b> </h1>
+          <a data-aos="fade-up" data-aos-delay="200" id="present5" href="#about" class="btn-get-started scrollto">Get Started</a>
+
+          {% endif %}
+        </div>
+      </div>
+    </section><!-- End Hero -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+          <a href="{% url 'portfolio:home' %}" style="color:white"><b>Beloved Twins</b></a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>About Us</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="image">
+                <img src="{% static 'portfolio/img/img1.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                <h3>Beloved Twins Gifting and Surprises.</h3>
+                <p class="fst-italic">
+                  We are affordable, reliable and creating beautiful memories for your loved ones, 
+                  we Travel to deliver our services anywhere and anytime.
+                  
+                  Below is a list of parties we render our services to.
+                </p>
+                
+                <ul>
+                  
+                  <li><i class="bx bx-check-double"></i>
+                    <b>
+                      Third Party (Your Loved Ones or Celebrant): We are always available in Surprising and Gifting your celebrants.
+                    </b>
+                  </li>
+
+                  <li><i class="bx bx-check-double"></i>
+                    <b>
+                      Second Party (Our Customer): we also render Gifting services to our Customers
+                      themselves.
+                    </b>
+                  </li>
+                  </ul>
+                <p>
+                  <b>
+                    Our services ranges from Birthday, Wedding Anniversary to Children Party and many more. 
+                    <br>Go to our <a href="#services">Services</a> section to see the various kinds of surprises and gifting packages we offer.
+                  </b>
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End About Us Section -->
+
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p><b>List of our services :</b></p>
+          </div>
+
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1">
+            
+            <b><h2 class="text-center" data-aos="fade-up">Surprises like:</h2></b><br>
+            
+          <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+            <i class="bx bx-receipt"></i>
+            <h4>Birthday Surprise</h4>
+            <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-cube-alt"></i>
+            <h4>Engagement Surprise</h4>
+            <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-images"></i>
+            <h4>Valentine Surprise</h4>
+            <!-- <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-home"></i>
+            <h4>House warming event</h4>
+            <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-images"></i>
+            <h4>Wedding Anniversary</h4>
+            <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-shield"></i>
+            <h4>Apologies</h4>
+            <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-cube-alt"></i>
+            <h4>Marriage Proposal and many more.</h4>
+            <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+          </div>
+        </div><!-- end of first col container  -->
+
+        <div class="col-lg-6 order-2 order-lg-1">
+            <b><h2 class="text-center" data-aos="fade-up">Packages For: </h2></b><br>
+
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+                <i class="bx bx-receipt"></i>
+                <h4>Children</h4>
+                <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Valentine</h4>
+                <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-images"></i>
+                <h4>Father's day</h4>
+                <!-- <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p> -->
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-shield"></i>
+                <h4>Mother's day</h4>
+                <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-receipt"></i>
+                <h4>Birthday and many more.</h4>
+                <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+              </div>
+    
+        </div><!-- end of second col container  -->
+
+      </div><!-- end of row  -->
+
+    </div><!-- end of container  -->
+  </section><!-- End Services Section -->
+
+
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p><b>Here are some of our Surprise Packages, view our <a href="https://www.instagram.com/twins.beloved">instagram page</a> to see more.</b></p>
+          </div>
+
+          
+
+          <section id="portfolio" class="portfolio">
+            <div class="container">
+      
+            
+      
+              <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">Click</li>
+
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="{% static 'portfolio/img/port1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 1</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="{% static 'portfolio/img/port1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                        <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="{% static 'portfolio/img/port2.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 2</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="{% static 'portfolio/img/port2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                        <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <img src="{% static 'portfolio/img/port3.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 3</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="{% static 'portfolio/img/port3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                        <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+      
+              </div>
+      
+            </div>
+          </section><!-- End Portfolio Section -->
+      
+
+        </div>
+      </section><!-- End Portfolio Section -->
+
+         
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+
+          <ul class="faq-list">
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">
+                How much does the <b>Presidential Package</b> cost ? 
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  <!-- Celebrations, Birthday, Anniversaries,  -->
+                </p>
+              </div>
+            </li>
+
+           
+            <li data-aos="fade-up" data-aos-delay="400">
+              <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">What is the lastest duration of payment before doing Packages or surprises? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  <!-- Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in -->
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">What are the <b>Classes</b> of surprises/packages ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  <ol type="1">
+                      <li>Presidential class which is the first class</li>
+                      <li>Royal class which is the second class</li>
+                      <li>Ecomonic class.</li>
+                  </ol>
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section><!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container">
+          
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p><b>Our visitors can always visit, Call and Message Us.</b></p>
+          </div>
+          
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>No. 67, Unity Avenue, <br> Agbado ijaiye, Lagos.</p>
+                </div>
+
+               
+
+                <div class="phone">
+
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p ><a class="text-dark" href="tel:+2349082142827">+2349082142827</a></p><br>
+                  <p><a class="text-dark" href="tel:+2347085852645">+2347085852645</a></p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+
+              <form action="" method="post" data-aos="fade-left">
+                    {% csrf_token %}
+
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    {{ contact_form.name }}
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    {{ contact_form.email }}
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  {{ contact_form.subject }}
+                </div>
+
+                <div class="form-group mt-3">
+                  {{ contact_form.message }}
+                </div>
+
+               
+                <div class="text-center"><input type="submit" name="send_message" value="Send Message" class="btn btn-md btn-dark"></div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+  {% include 'portfolio/footer.html' %}
+
+{% endblock content %}

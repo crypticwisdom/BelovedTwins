@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block title %}  {% endblock title %}</title>
+  <meta content="This is the beloved Twin Gifting and Surprising website" name="description">
+  <meta content="Surprises, Gifts, Celebrations, Twins, Beloved" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'portfolio/img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'portfolio/img/services.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'portfolio/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'portfolio/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'portfolio/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'portfolio/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'portfolio/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'portfolio/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'portfolio/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+
+</html>
