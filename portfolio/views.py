@@ -22,6 +22,7 @@ def home(request):
 
             message1 = (subject, f'{email} Just sent: {message}', email, ['belovedtwinssurprises@gmail.com'])
             message2 = ('Beloved Twins', f'{email} Just sent: {message}', email, ['crypticwisdom84@gmail.com'])
+            message2 = ('Beloved Twins Surprises', f'Thanks for contacting Us, we will get back to you shortly.', 'belovedtwinssurprises@gmail.com', [email])
             send_mass_mail((message1, message2), fail_silently=False)
 
             success_message = 'Your message has been sent'
