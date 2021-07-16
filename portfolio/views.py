@@ -20,7 +20,7 @@ def home(request):
             subject = contact_form.cleaned_data['subject']
             message = contact_form.cleaned_data['message']
 
-            message1 = (subject, message, email, ['belovedtwinssurprises@gmail.com'])
+            message1 = (subject, f'{email} Just sent: {message}', email, ['belovedtwinssurprises@gmail.com'])
             message2 = ('Beloved Twins', f'{email} Just sent: {message}', email, ['crypticwisdom84@gmail.com'])
             send_mass_mail((message1, message2), fail_silently=False)
 
