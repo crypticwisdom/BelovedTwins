@@ -6,6 +6,66 @@
 
 {% block content %}
 
+<!-- ====== Modal Section ======= -->
+
+<div class="row">
+  <div class="col-md-12">
+
+      <div class="modal fade" tabindex="-1" id="myModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" >
+              <div class="modal-header" style="background-color:rgb(235, 75, 181)">
+                <h3 class="modal-title fw-bolder  text-light">
+                  Prices for our services
+                </h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="text-align: center; color: black;">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold me-3 fs-4">Presidential Surprises or Packages</div>
+                        <p class="fw-bold">&#8358; 150,000 and above.</p>
+                    </div>
+                    <i class="bi bi-bookmark-star-fill fs-1" style="color: gold;"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold me-3 fs-4">Royal Surprises or Packages</div>
+                        <p class="fw-bold">&#8358; 70,000 - &#8358; 149,000.</p>
+                    </div>
+                    <i class="bi bi-award-fill fs-1" style="color: steelblue;"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold me-3 fs-4">Economic Surprises or Packages</div>
+                        <p class="fw-bold">&#8358; 50,000 - &#8358; 69,000.</p>
+                    </div>
+                    <i class="bi bi-briefcase-fill fs-1" style="color: green;"></i>
+
+                  </li>
+                </ol>
+              </div>
+              <div class="modal-footer" style="background-color:rgb(240, 150, 210)">
+                <div class="social-links">
+
+                  <a href="https://web.facebook.com/Beloved-Twins-gifting-and-surprise-104099295000533" class="facebook me-3 fs-3 text-primary" target="_self"><i class="bx bxl-facebook"></i></a>
+                  <a href="https://www.instagram.com/twins.beloved" target="_self" class="instagram"><i class="bx bxl-instagram me-3 fs-3 text-secondary"></i></a>
+                  <a href="https://wa.me/+23409082142827"  target="_self" class="whatsapp"><i class="bx bxl-whatsapp me-3 fs-3 text-success"></i></a>
+                </div>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>  
+
+
+<!-- ======= End of Modal Section ======= -->
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
@@ -36,7 +96,8 @@
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="#">Services</a></li>
+            <li><a class="nav-link scrollto" href="#services" data-bs-toggle="modal" data-bs-target="#myModal">Prices</a></li>
             <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
             <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -115,31 +176,31 @@
       <div class="row">
         <div class="col-lg-6 order-2 order-lg-1">
             
-            <b><h2 class="text-center" data-aos="fade-up">Surprises like:</h2></b><br>
+            <b><h2 class="text-center fw-bolder" data-aos="fade-up">Surprises for:</h2></b><br>
             
           <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
             <i class="bx bx-receipt"></i>
-            <h4>Birthday Surprise</h4>
+            <h4>Birthdays</h4>
             <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
             <i class="bx bx-cube-alt"></i>
-            <h4>Engagement Surprise</h4>
+            <h4>Engagements</h4>
             <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
             <i class="bx bx-images"></i>
-            <h4>Valentine Surprise</h4>
+            <h4>Valentine's day</h4>
             <!-- <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p> -->
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-home"></i>
-            <h4>House warming event</h4>
+            <h4>House warming events</h4>
             <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-images"></i>
-            <h4>Wedding Anniversary</h4>
+            <h4>Wedding Anniversaries</h4>
             <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
@@ -149,22 +210,22 @@
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-cube-alt"></i>
-            <h4>Marriage Proposal and many more.</h4>
+            <h4>Marriage Proposals and many more.</h4>
             <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
           </div>
         </div><!-- end of first col container  -->
-
+          <br>
         <div class="col-lg-6 order-2 order-lg-1">
-            <b><h2 class="text-center" data-aos="fade-up">Packages For: </h2></b><br>
+            <b><h2 class="text-center fw-bolder" data-aos="fade-up">Packages For: </h2></b><br>
 
             <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
                 <i class="bx bx-receipt"></i>
-                <h4>Children</h4>
+                <h4>Children's day</h4>
                 <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
               </div>
               <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
                 <i class="bx bx-cube-alt"></i>
-                <h4>Valentine</h4>
+                <h4>Valentine's day</h4>
                 <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
               </div>
               <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
@@ -179,7 +240,7 @@
               </div>
               <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
                 <i class="bx bx-receipt"></i>
-                <h4>Birthday and many more.</h4>
+                <h4>Birthdays and many more.</h4>
                 <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
               </div>
     
